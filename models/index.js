@@ -9,7 +9,6 @@ MONGO_URL = CONNECTION_STRING.replace("<password>",process.env.MONGO_PASSWORD);
 console.log(MONGO_URL);
 
 
-
 mongoose.connect(MONGO_URL || "mongodb://localhost/info30005", {
   useNewUrlParser: true,
   useCreateIndex: true,
